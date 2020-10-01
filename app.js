@@ -1,4 +1,4 @@
-console.log('hiii there');
+console.log('Javascript Running');
 notesTile();
 
 let addBtn = document.getElementById('addBtn');
@@ -29,7 +29,7 @@ function notesTile() {
     let notesComponent = "";
     notesObj.forEach(function (element, index) {
         notesComponent += `
-        <div class="noteCard card my-2 mx-2" style="width: 18rem;">
+        <div class="noteCard card my-2 mx-2" style="width: 19rem;">
         <div class="card-body">
             <h5 class="card-title">Note #${index + 1} </h5>
             <p class="card-text">${element}</p>
@@ -49,7 +49,7 @@ function notesTile() {
 }
 
 function deleteNote(index) {
-    console.log('Delete ho ra h', index);
+    console.log('The note is being deleted', index);
     let notes = localStorage.getItem("notes")
     if (notes == null) {
         notesObj = [];
